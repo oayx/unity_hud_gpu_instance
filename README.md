@@ -5,9 +5,11 @@
 主要用于游戏中的HUD合批，实现了一个批次渲染所有HUD
 
 
-## 核心技术
+## 技术介绍
 
-1.使用了Text渲染到纹理Array，参考
+1.使用了Text渲染到纹理Array，参考FontRender2Texture
+2.构建Instance需要的Mesh，参考HUDMeshBuild
+3.HUDInstanced使用Graphics.DrawMeshInstanced绘制
 
 
 ## 效果演示
