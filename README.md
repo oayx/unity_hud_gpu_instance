@@ -18,6 +18,16 @@
 <br><img src='image/1.png'><br>
 
 
+## 与普通UGUI方式比较(渲染1000个HUD，进度条每帧更新)
+
+1.以下是直接使用UGUI渲染，一个Image+一个Text
+<br><img src='image/4.png'><br>
+<br><img src='image/5.png'><br>
+2.以下是使用GPU Instance的版本
+<br><img src='image/3.png'><br>
+<br><img src='image/2.png'><br>
+3.使用GPU Instance，渲染1000个HUD，基本上可以在2DrawCall和1MS CPU开销完成
+
 
 ## 其他注意
 

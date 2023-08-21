@@ -40,7 +40,7 @@ Shader "HUD/Instance"
 
 			UNITY_DECLARE_TEX2DARRAY(_FontTex);
 			float4 _FontTex_ST;
-			float4 _Parms[512];
+			float4 _Parms[511];
 
 			v2f vert(appdata v, uint instanceID : SV_InstanceID)
 			{
