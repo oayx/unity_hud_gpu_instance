@@ -11,7 +11,7 @@
 
 2.构建Instance需要的Mesh，参考HUDMeshBuild
 
-3.HUDInstanced使用Graphics.DrawMeshInstanced绘制
+3.DrawInstanceManager使用Graphics.DrawMeshInstanced绘制；从ActorManager收集每个对象的坐标及进度条信息
 
 
 ## 效果演示
