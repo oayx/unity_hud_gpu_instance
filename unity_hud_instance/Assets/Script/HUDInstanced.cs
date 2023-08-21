@@ -18,7 +18,7 @@ namespace YX
         private Material _instanceMat;
         [SerializeField]
         private FontRender2Texture _font2Texture;
-
+        
         private HUDMeshBuild _meshBuild;
         private Mesh _instanceMesh;
 

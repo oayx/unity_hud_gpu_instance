@@ -45,7 +45,7 @@ namespace YX
         public int Draw(string txt)
         {
             _text.text = txt;
-
+            
             _uiCamera.enabled = true;
             {
                 RenderTexture.active = _renderTexture;
