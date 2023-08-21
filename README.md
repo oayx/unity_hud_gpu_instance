@@ -26,7 +26,8 @@
 2.以下是使用GPU Instance的版本
 <br><img src='image/3.png'><br>
 <br><img src='image/2.png'><br>
-3.使用GPU Instance，渲染1000个HUD，基本上可以在2DrawCall和1MS CPU开销完成
+3.相对直接使用UGUI，在DrawCall和CPU耗时上，有很大优势
+4.UGUI测试时，没有世界坐标->UI坐标转换，如果加上这部分的耗时，优势会更加明显
 
 
 ## 其他注意
