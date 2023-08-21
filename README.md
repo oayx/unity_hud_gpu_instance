@@ -27,9 +27,11 @@
 <br><img src='image/3.png'><br>
 <br><img src='image/2.png'><br>
 3.相对直接使用UGUI，在DrawCall和CPU耗时上，有很大优势
+
 4.UGUI测试时，没有世界坐标->UI坐标转换，如果加上这部分的耗时，优势会更加明显
 
 
 ## 其他注意
 
-1.一次可以提交500个HUD，如果超过500，需要构建多个MaterialPropertyBlock，然后多次调用Graphics.DrawMeshInstanced
+1.一次可以提交511个HUD，如果超过511，会强行分批次渲染
+2.DrawMeshInstanced在显卡上的耗时，比普通的DrawIndex，多了10倍以上。实际使用中需要测试GPU本身是不是瓶颈再决定用哪种方式
